@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var studentName = [];
+        var fruits = ["apple", "mango" , "banana" , "orange", "cherries"]
+        console.log(fruits);
+        var score = [120 ,169 , 234 ,563, 213 ,765, 456]
+        console.log(score);
+        var booleanArray = [true , false]
+        var mixedArray = ["quetta", 23 ,"karachi" , 72 , "lahore" , 35]
+        console.log(mixedArray);
+        document.write("<h2>Qualifications </h2>")
+        var qualifications = ['SSC','PHD','HSC','BCS','BCOM','MS','M.Phil']
+        document.write(qualifications);
+        var student = ['Anna','Simran','Tom','Henry','Ali']
+        var scores = [ 230 , 432 ,213 ,342 ,499]
+        var  totalScore = (500)
+        document.write("<br>")
+        document.write("<h2>Marks </h2>")
+        document.write("Score of " ,student[0] , " is " , scores[0] , " Percentages : " , (scores[0] / totalScore )* 100 , " % <br>" ,
+                       "Score of " ,student[1] , " is " , scores[1] , " Percentages : " , (scores[1] / totalScore )* 100 , " % <br>" ,
+                       "Score of " ,student[2] , " is " , scores[2] , " Percentages : " , (scores[2] / totalScore )* 100 , " % <br>" ,
+                       "Score of " ,student[3] , " is " , scores[3] , " Percentages : " , (scores[3] / totalScore )* 100 , " % <br>" ,
+                       "Score of " ,student[4] , " is " , scores[4] , " Percentages : " , (scores[4] / totalScore )* 100 , " % <br>")
+                       document.write("<h2>Colors</h2>")
+         var color = ['red','blue','pink','purple','black','green'];
+         document.write(color , "<br>")
+         var color1 = prompt("add color 1","White")
+         color[0] = color1
+         document.write(color ,"<br>")
+
+         var color2 = prompt("add last color ","red")
+         color[5] = color2
+         document.write(color ,"<br>")
+         color[1] = "grey"
+         color[2] = "green"
+         document.write(color ,"<br>")
+         color.shift();
+         document.write(color ,"<br>")
+         color.pop();
+         document.write(color ,"<br>")
+
+         var color3 = prompt("which is your desired position to add color?(according to index)")
+         var color4 = prompt("Color Name?","voilet")
+         color[color3] = color4 
+         document.write(color ,"<br>")
+
+         var color5 = prompt("which positioncolor you want to delete? (according to index)")
+         color.splice(color5,1);
+         document.write(color ,"<br>")
+        
+         document.write("<h2>Ascending Order</h2>")
+         var list = [320,230,480,120]
+         document.write("Scores of  Students: ",list ,"<br>")
+         list.sort();
+         document.write("Ordered Scores of  Students: ",list ,"<br>")
+
+         document.write("<h2>Cities</h2>")
+         var city = ["Karachi" , "Lahore" ,"Quetta" , "Islamabad" ,"Peshawar"];
+         document.write("Cities List : ","<br>",city ,"<br>")
+         var city1 = city.slice(2,4);
+         document.write("Selected Cities List : ","<br>",city1 ,"<br>")
+        
+        document.write("<h2>Array joining</h2>")
+        document.write("<h3>Array :</h3>")
+        var arr = ["This", "is", "my", "cat"];
+        document.write(arr)
+        document.write("<h3>String :</h3>")
+        var newArr = arr.join(" ");
+        document.write(newArr)
+        
+        document.write("<h2>Devices</h2>")
+        var devices = ['keyboard', 'mouse' ,'printer' , 'monitor'];
+       document.write(devices,"<br>")
+document.write("Output in Order : <br> ")
+        for (var i=0 ; i <= devices.length -1 ; i++ ){
+            document.write(devices[i]," <br>");
+        }
+             
+document.write("Output in Reverse Order : <br> ")
+       for (var i = devices.length - 1; i >= 0; i--) 
+    document.write(devices[i], "<br>");
+
+
+document.write("<h1>Question 15</h1>")
+
+var manufacturers = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
+
+
+  var dropdownHTML = '<select>';
+       
+        for (var i = 0; i < manufacturers.length; i++) {
+            dropdownHTML += '<option value="' + manufacturers[i] + '">' + manufacturers[i] + '</option>';
+        }
+    
+        dropdownHTML += '</select>';
+
+        document.write(dropdownHTML);
+
+
+
+        
+    </script>
+    
+</body>
+</html>
